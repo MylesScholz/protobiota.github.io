@@ -1,0 +1,27 @@
+body {
+    margin: 0px;
+}
+
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
+
+    h1 {
+        margin: 0px;
+
+        font-size: 18pt;
+    }
+
+    p {
+        margin: 0px;
+
+        font-size: 14pt;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    padding: 50px;
+}
