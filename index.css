@@ -1,9 +1,22 @@
+/* Theme Properties */
+:root {
+    --main-bg-color: azure;
+    --secondary-bg-color: #e4f2f7;
+
+    --dark-font-color: #191531;
+    --font-family: 'Lucida Sans',
+        'Lucida Sans Regular',
+        Verdana,
+        sans-serif;
+}
+
 body {
     margin: 0px;
 }
 
 html {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
+    font-family: var(--font-family);
+    color: var(--dark-font-color);
 
     h1 {
         margin: 0px;
@@ -21,7 +34,77 @@ html {
 main {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    align-items: stretch;
 
-    padding: 50px;
+    background-color: var(--main-bg-color);
+
+    #navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        border-bottom: 1px solid var(--dark-font-color);
+
+        #navbar-title {
+            font-size: 18pt;
+
+            font-weight: bold;
+        }
+
+        #repo-link-frame {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 100px;
+            height: 100px;
+
+            #repo-link {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                border-radius: 50%;
+                clip-path: circle(50%);
+
+                width: 50px;
+
+                &:hover {
+                    background-color: var(--secondary-bg-color);
+                }
+
+                img {
+                    width: 50px;
+                }
+            }
+        }
+
+        .navbar-item,
+        .navbar-item:visited {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 0px 50px;
+
+            height: 100px;
+
+            color: var(--dark-font-color);
+
+            text-decoration: none;
+            scroll-behavior: smooth;
+
+            &:hover {
+                background-color: var(--secondary-bg-color);
+            }
+        }
+    }
+
+    .content-frame {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        padding: 50px;
+    }
 }
