@@ -134,15 +134,30 @@ p {
 
 /* Tagline Content */
 
+#Protobiota {
+    gap: 50px;
+}
+
 #call-to-action {
     font-size: 16pt;
+}
+
+#overview-frame {
+    display: flex;
+    gap: 25px;
+
+    width: 50%;
+
+    text-align: justify;
 }
 
 /* Team Content */
 
 #Team ul {
     display: flex;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
 
     margin: 0px;
@@ -181,4 +196,24 @@ p {
     padding: 20px;
 
     background-color: var(--secondary-bg-color);
+}
+
+/* Technology Content */
+
+#godot-frame {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    width: 50%;
+}
+
+#godot-logo {
+    width: 50%;
+}
+
+#godot-frame p {
+    width: 50%;
+
+    text-align: justify;
 }
