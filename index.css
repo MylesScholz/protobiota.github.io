@@ -135,20 +135,61 @@ p {
 /* Tagline Content */
 
 #Protobiota {
-    gap: 50px;
+    gap: 20px;
 }
 
 #call-to-action {
+    font-size: 16pt;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.subheader {
     font-size: 16pt;
 }
 
 #overview-frame {
     display: flex;
     gap: 25px;
+    width: 50%;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+#use-cases-frame {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    flex-flow: column;
+}
+
+#use-cases {
+    width: 50%;
+    text-align: justify;
+    align-self: center;
+}
+
+.use-case {
+    margin-bottom: 10px;
+}
+
+#comparison-frame {
+    display: flex;
+    gap: 25px;
 
     width: 50%;
 
     text-align: justify;
+}
+
+/* Download Content */
+
+#download-frame {
+    display: contents;
+}
+
+.download-item {
+    margin-top: 12px;
 }
 
 /* Team Content */
@@ -168,6 +209,7 @@ p {
 #Team ul li {
     display: flex;
     align-items: center;
+    flex-direction: column;
     gap: 10px;
 
     border-radius: 5px;
@@ -175,6 +217,12 @@ p {
     padding: 20px;
 
     background-color: var(--secondary-bg-color);
+}
+
+#Team ul li div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .team-profile-pic {
