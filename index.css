@@ -228,6 +228,8 @@ p {
 .team-profile-pic {
     border-radius: 50%;
 
+	object-fit: cover;
+
     width: 100px;
     height: 100px;
 
@@ -240,10 +242,25 @@ p {
     gap: 10px;
 
     border-radius: 5px;
+	margin-left: -45px;
 
     padding: 20px;
 
     background-color: var(--secondary-bg-color);
+}
+
+#project-partner-frame div {
+	display: flex;
+    align-items: center;
+}
+
+.project-partner-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-info {
+	text-align: center;
 }
 
 /* Technology Content */
