@@ -1,0 +1,8 @@
+/*********************** Main Content ************************/
+
+.guide-content-frame {
+    display: flex;
+    flex-direction: column;
+
+    padding: 25px;
+}
