@@ -8,25 +8,36 @@
         <link rel="stylesheet" href="index.css" />
     </head>
     <body>
-        <main>
-            <div id="navbar">
-                <div id="left-navbar-items">
-                    <a class="navbar-item" href="#Protobiota" id="navbar-title">Protobiota</a>
-                    <a class="navbar-item" href="#Download">Download</a>
-                    <a class="navbar-item" href="#Team">Team</a>
-                    <a class="navbar-item" href="#Technology">Technology</a>
+        <div id="navbar">
+            <div id="left-navbar-items">
+                <div id="navbar-home-frame">
+                    <a href="./index.html" id="navbar-home-link">
+                        <img src="CellLogo.svg" />
+                    </a>
                 </div>
-                <div id="right-navbar-items">
-                    <div id="repo-link-frame">
-                        <a href="https://github.com/MylesScholz/A-Life-Capstone-Project" id="repo-link">
-                            <img src="github-mark.svg" />
-                        </a>
-                    </div>
+                <a class="navbar-item" href="#Overview">Overview</a>
+                <a class="navbar-item" href="#Team">Team</a>
+                <a class="navbar-item" href="#Technology">Technology</a>
+            </div>
+            <div id="right-navbar-items">
+                <div id="repo-link-frame">
+                    <a href="https://github.com/MylesScholz/A-Life-Capstone-Project" id="repo-link">
+                        <img src="github-mark.svg" />
+                    </a>
                 </div>
             </div>
+        </div>
+        <main>
             <div class="content-frame" id="Protobiota">
                 <h1 id="tagline">Simulating artificial microbes from organelles to evolution​</h1>
-                <p class="subheader" id="call-to-action">Start your own simulation and watch the cells evolve!</p>
+                <p id="call-to-action">Start your own simulation and watch the cells evolve!</p>
+                <a class="download-button"
+                    href="https://github.com/MylesScholz/A-Life-Capstone-Project/releases/tag/v1.0.0">
+                    Download
+                </a>
+            </div>
+            <div class="content-frame" id="Overview">
+                <h1>Overview</h1>
                 <div id="overview-frame">
                     <p>&emsp;&emsp;Protobiota is an artificial life (A-life) simulation—software that replicates the
                         structures
@@ -47,10 +58,11 @@
                         selection and develop
                         self-sustaining processes.</p>
                 </div>
-                <p class="subheader">Important use cases</p>
-                <div id="use-cases-frame">
+                <div id="use-case-frame">
+                    <h2>Important use cases</h2>
                     <ul id="use-cases">
-                        <li class="use-case">Studying the emergence of life-like behaviors from simple rules and emergent phenomena in
+                        <li class="use-case">Studying the emergence of life-like behaviors from simple rules and
+                            emergent phenomena in
                             complex systems, such as the evolution of cooperation and the development of symbiotic
                             relationships.
                         </li>
@@ -60,27 +72,24 @@
                         </li>
                         <li class="use-case">
                             Can be used as a tool for teaching biology. This includes basic cell structure and functions
-                            as well as cell behavior and interactions along with the aforementioned principles of evolution.
+                            as well as cell behavior and interactions along with the aforementioned principles of
+                            evolution.
                         </li>
                     </ul>
                 </div>
-                <p class="subheader">How we compare to other simulations</p>
                 <div id="comparison-frame">
+                    <h2>How Protobiota compares to other simulations</h2>
                     <p>
                         &emsp;&emsp;Protobiota is unique in that it is has more detail and complex behaviors than
                         many other A-life simulations. It is also a simulation of artificial life that is designed to
                         be easy to use and understand, with a more simple and intuitive interface. It has more detailed
-                        graphics than many other A-life simulations that are specifically designed to tell the user exactly
-                        what is happening with each cell. All this makes it more engaging and ideal for educational purposes,
+                        graphics than many other A-life simulations that are specifically designed to tell the user
+                        exactly
+                        what is happening with each cell. All this makes it more engaging and ideal for educational
+                        purposes,
                         as it can be used to teach complex biological concepts in a way that is engaging and interactive
                         without requiring indepth prior knowledge.
                     </p>
-            </div>
-            <div class="content-frame" id="Download">
-                <h1 id="download-heading">Download Protobiota</h1>
-                <div id="download-frame">
-                    <p class="download-item">Come back to download simulation when 1.0 is released</p>
-                    <a class="download-item" href="https://github.com/MylesScholz/A-Life-Capstone-Project" id="download-source-code-button">Download source code and documentation</a>
                 </div>
             </div>
             <div class="content-frame" id="Team">
@@ -105,14 +114,16 @@
                             <img class="team-profile-pic" src="WyattProfilePic.jpg" />
                             <p>Wyatt Holliday</p>
                         </div>
-                        <p class="contact-info"><a href="mailto:wyatt.holliday10@gmail.com">wyatt.holliday10@gmail.com</a></p>
+                        <p class="contact-info"><a
+                                href="mailto:wyatt.holliday10@gmail.com">wyatt.holliday10@gmail.com</a></p>
                     </li>
                     <li class="team-member-item">
                         <div>
                             <img class="team-profile-pic" src="SashaProfilePic.jpg" />
                             <p>Sasha Rosenthal</p>
                         </div>
-                        <p class="contact-info"><a href="mailto:rosenths@oregonstate.edu">rosenths@oregonstate.edu</a></p>
+                        <p class="contact-info"><a href="mailto:rosenths@oregonstate.edu">rosenths@oregonstate.edu</a>
+                        </p>
                     </li>
                     <li class="team-member-item">
                         <div>
@@ -123,27 +134,30 @@
                     </li>
                 </ul>
                 <div id="project-partner-frame">
-					<div>
-						<img class="team-profile-pic" src="https://engineering.oregonstate.edu/sites/engineering.oregonstate.edu/files/styles/profile_image/public/2023-04/profile-bill-pfeil.jpg" />
-					
-						<div class="project-partner-info">
-							<h2>Project Partner</h2>
-							<p>Bill Pfeil</p>
-							<p>Senior Instructor I</p>
-							<p>Oregon State University</p>
-						</div>
-						
-					</div>
-					<p class="contact-info"><a href="mailto:pfeilw@oregonstate.edu">pfeilw@oregonstate.edu</a></p>
+                    <div>
+                        <img class="team-profile-pic"
+                            src="https://engineering.oregonstate.edu/sites/engineering.oregonstate.edu/files/styles/profile_image/public/2023-04/profile-bill-pfeil.jpg" />
+
+                        <div class="project-partner-info">
+                            <h2>Project Partner</h2>
+                            <p>Bill Pfeil</p>
+                            <p>Senior Instructor I</p>
+                            <p>Oregon State University</p>
+                        </div>
+
+                    </div>
+                    <p class="contact-info"><a href="mailto:pfeilw@oregonstate.edu">pfeilw@oregonstate.edu</a></p>
                 </div>
             </div>
             <div class="content-frame" id="Technology">
                 <h1>Built with Godot and GDExtension</h1>
                 <div id="godot-frame">
                     <img id="godot-logo" src="godot-logo.svg" />
-                    <p>&emsp;&emsp;Godot is an open-source game engine that we used as a framework for Protobiota. It
-                        handles much of the rendering, UI, and physics behavior of the simulation. Additionally, we used
-                        GDExtension--an interface of Godot that allowed us to write custom nodes in C++.</p>
+                    <p>&emsp;&emsp;Godot is an open-source game engine that we used as a framework for Protobiota.
+                        It
+                        handles much of the rendering, UI, and physics behavior of the simulation. Additionally, we
+                        used
+                        GDExtension--an interface of Godot that allowed us to write custom components in C++.</p>
                 </div>
             </div>
         </main>

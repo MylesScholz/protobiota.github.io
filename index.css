@@ -4,12 +4,15 @@
 :root {
     --main-bg-color: azure;
     --secondary-bg-color: #e4f2f7;
+    --dark-bg-color: darkslateblue;
+    --secondary-dark-bg-color: slateblue;
 
     --h1-font-size: 18pt;
     --h2-font-size: 16pt;
     --p-font-size: 12pt;
 
     --dark-font-color: #191531;
+    --light-font-color: azure;
     --font-family: 'Lucida Sans',
         'Lucida Sans Regular',
         Verdana,
@@ -29,6 +32,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: stretch;
+
+    padding: 50px;
 
     background-color: var(--main-bg-color);
 }
@@ -65,6 +70,34 @@ p {
     display: flex;
 }
 
+#navbar-home-frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100px;
+    height: 100px;
+}
+
+#navbar-home-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    width: 80px;
+    height: 80px;
+}
+
+#navbar-home-link:hover {
+    background-color: var(--secondary-bg-color);
+}
+
+#navbar-home-link img {
+    height: 75px;
+}
+
 .navbar-item,
 .navbar-item:visited {
     display: flex;
@@ -85,12 +118,6 @@ p {
 
 .navbar-item:hover {
     background-color: var(--secondary-bg-color);
-}
-
-#navbar-title {
-    font-size: 18pt;
-
-    font-weight: bold;
 }
 
 #repo-link-frame {
@@ -121,7 +148,7 @@ p {
     background-color: var(--secondary-bg-color);
 }
 
-/*********************** Page Content ************************/
+/*********************** Main Content ************************/
 
 .content-frame {
     display: flex;
@@ -129,7 +156,27 @@ p {
     align-items: center;
     gap: 15px;
 
-    padding: 50px;
+    padding: 25px;
+}
+
+.download-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 5px;
+
+    padding: 15px 20px;
+
+    font-size: var(--h2-font-size);
+    text-decoration: none;
+    color: var(--light-font-color);
+
+    background-color: var(--dark-bg-color);
+}
+
+.download-button:hover {
+    background-color: var(--secondary-dark-bg-color);
 }
 
 /* Tagline Content */
@@ -138,13 +185,14 @@ p {
     gap: 20px;
 }
 
-#call-to-action {
-    font-size: 16pt;
-    margin-top: 30px;
-    margin-bottom: 30px;
+#call-to-action-frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
-.subheader {
+#call-to-action {
     font-size: 16pt;
 }
 
@@ -153,43 +201,37 @@ p {
     gap: 25px;
     width: 50%;
     text-align: justify;
-    margin-bottom: 20px;
 }
 
-#use-cases-frame {
+#use-case-frame {
     display: flex;
-    gap: 25px;
+    flex-direction: column;
     align-items: center;
-    flex-flow: column;
+    gap: 15px;
+
+    width: 50%;
 }
 
 #use-cases {
-    width: 50%;
     text-align: justify;
     align-self: center;
+
+    margin: 0px;
 }
 
 .use-case {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 #comparison-frame {
     display: flex;
-    gap: 25px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 
     width: 50%;
 
     text-align: justify;
-}
-
-/* Download Content */
-
-#download-frame {
-    display: contents;
-}
-
-.download-item {
-    margin-top: 12px;
 }
 
 /* Team Content */
@@ -228,7 +270,7 @@ p {
 .team-profile-pic {
     border-radius: 50%;
 
-	object-fit: cover;
+    object-fit: cover;
 
     width: 100px;
     height: 100px;
@@ -242,7 +284,7 @@ p {
     gap: 10px;
 
     border-radius: 5px;
-	margin-left: -45px;
+    margin-left: -45px;
 
     padding: 20px;
 
@@ -250,17 +292,17 @@ p {
 }
 
 #project-partner-frame div {
-	display: flex;
+    display: flex;
     align-items: center;
 }
 
 .project-partner-info {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-info {
-	text-align: center;
+    text-align: center;
 }
 
 /* Technology Content */
