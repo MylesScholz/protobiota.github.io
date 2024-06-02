@@ -12,7 +12,7 @@
     width: 75%;
 }
 
-.guide-content-frame img {
+.guide-screenshot {
     align-self: center;
 
     border-radius: 5px;
@@ -43,6 +43,8 @@
     color: var(--dark-font-color);
 }
 
+/* User Interface Content */
+
 #lineage-tab-img-frame {
     display: flex;
     justify-content: center;
@@ -52,4 +54,21 @@
 
 #lineage-tab-img-frame img {
     width: 300px;
+}
+
+/* Cell Structures Content */
+
+.guide-sprite-frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.sprite-img {
+    width: 200px;
+}
+
+#nucleus-sprite {
+    width: 75px;
 }
