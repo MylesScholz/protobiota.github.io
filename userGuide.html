@@ -33,6 +33,104 @@
         <main>
             <div class="guide-content-frame">
                 <h1>User Guide​</h1>
+                <div id="table-of-contents-frame">
+                    <h2>Table of Contents</h2>
+                    <ol id="table-of-contents">
+                        <li><a href="#QuickstartGuide">Quickstart Guide</a></li>
+                        <li><a href="#UserInterface">User Interface</a></li>
+                        <li><a href="#CellStructures">Cell Structures</a></li>
+                        <li><a href="#Genome">Genome</a></li>
+                        <li><a href="#Parameters">Parameters</a></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="guide-content-frame" id="QuickstartGuide">
+                <h1>Quickstart Guide</h1>
+                <p>To get started with Protobiota, go to the following link and download the corresponding zip file for
+                    your operating system:</p>
+                <a href="https://github.com/MylesScholz/A-Life-Capstone-Project/releases/tag/v1.0.0">
+                    https://github.com/MylesScholz/A-Life-Capstone-Project/releases/tag/v1.0.0
+                </a>
+                <p>Unzip the contents of the file into the same directory on your computer. Then, simply
+                    double-click the executable to launch Protobiota.</p>
+                <p>The user interface is described in detail below, as well as some details about the underlying systems
+                    of the simulation.</p>
+            </div>
+            <div class="guide-content-frame" id="UserInterface">
+                <h1>User Interface</h1>
+                <h2>Main Menu</h2>
+                <p>Protobiota opens on its main menu (pictured below). There are three buttons on this page: "Start
+                    New Simulation", "Settings", and "Quit". "Start New Simulation" will create a new simulation and
+                    take you to the main simulation view. "Settings" will open the settings menu without starting a new
+                    simulation. Lastly, "Quit" will close Protobiota. This does not save your parameters or settings.
+                </p>
+                <img src="MainMenu.png" />
+                <h2>Simulation View</h2>
+                <p>The main simulation view shows the full environment in which cells are confined (pictured below).
+                    There are two interface panels: the navbar at the top of the window and the statistics panel, which
+                    is in the bottom right of the window by default.</p>
+                <img src="SimulationView.png" />
+                <p>The navbar has several controls for the simulation: the simulation title ("Protobiota"), "Menu",
+                    "Reset", "Stats", and the speed controls. Clicking on the simulation title will take you to the main
+                    menu. The "Menu" button opens and closes the settings menu while the simulation is ongoing. The
+                    "Reset" button creates a new simulation with updated parameters. The "Stats" button opens and closes
+                    the statistics panel. The speed controls allow you to pause, speed up, or slow down the simulation.
+                    The left-facing double arrows reduce the simulation speed by half, and the right-facing double
+                    arrows double the speed. The vertical bars pause the simulation, and while paused, the right-facing
+                    triangle unpauses.</p>
+                <p>The statistics panel shows information about cells and the environment as a whole. It has two tabs:
+                    "Cell" and "Lineage". The "Cell" tab always shows the current number of living cells in the
+                    environment and the total number of nutrient zones created since it began. You can click on a cell
+                    directly to select it, and the "Cell" tab will display some of its internal state information, such
+                    as its age, size, and available resources (pictured below). When you do this, the view will zoom in
+                    on the selected cell and follow it as it moves. Keyboard shortcuts to toggle this tracking or clear
+                    the selection entirely will also appear in the top left of the screen.</p>
+                <img src="CellSelected.png" />
+                <p>The "Lineage" tab displays the relationships between cells, living and dead, in the current
+                    simulation. By default, it selects the "last universal common ancestor" (LUCA), which is the
+                    theoretical organism from which all life originates. You can select related cells by clicking the
+                    blue circles in the "Parents" and "Children" sections of this tab or by clicking living cells
+                    directly. Doing either will also select the cell in the "Cell" tab. Dead cells will appear in
+                    an inset when selected. The following images show the "Lineage" tab when LUCA is selected and when a
+                    dead cell is selected, respectively.</p>
+                <div id="lineage-tab-img-frame">
+                    <img src="LUCASelected.png" />
+                    <img src="DeadCellSelected.png" />
+                </div>
+                <h2>Settings Menu</h2>
+                <p>You can open the settings menu either from the main menu (pictured below) or from the simulation
+                    view. It has a "Quit to Menu" button in the bottom left that closes the current simulation (if there
+                    is one) and returns you to the main menu. If the menu is open from the simulation view, the X button
+                    in the top right will simply close the settings menu without ending the simulation.</p>
+                <p>In its main area, the settings menu has three tabs: "General", "Keybindings", and "Parameters". You
+                    can set some preferences for the user interface through the settings in the "General" tab. The
+                    "Keybindings" tab shows a list of keyboard mappings for various simulation and UI controls. Finally,
+                    the "Parameters" tab allows you to set some of the values on which the simulation is based, such as
+                    the number of initial cells and nutrient zones. See the Parameters section below for more details.
+                </p>
+                <img src="SettingsMenu.png" />
+            </div>
+            <div class="guide-content-frame" id="CellStructures">
+                <h1>Cell Structures</h1>
+                <p>A distinguishing feature of Protobiota is the system of cell structures and their interactions that
+                    define cell behavior. Cells are entirely composed of five types of structures: cell membranes,
+                    flagella, nuclei, mitochondria, and ribosomes. The presence of each cell structure and their
+                    behavior is determined by the cell's genome, and each structure acts independently of the others.
+                    For details about the Genome, see the Genome section below.
+                </p>
+                <h2>Cell Membrane</h2>
+                <h2>Flagella</h2>
+                <h2>Nucleus</h2>
+                <h2>Mitochondria</h2>
+                <h2>Ribosomes</h2>
+            </div>
+            <div class="guide-content-frame" id="Genome">
+                <h1>Genome</h1>
+                <p></p>
+            </div>
+            <div class="guide-content-frame" id="Parameters">
+                <h1>Parameters</h1>
+                <p></p>
             </div>
         </main>
         <a id="scroll-reset-button" onclick="scrollToTop()">

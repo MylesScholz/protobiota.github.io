@@ -3,6 +3,53 @@
 .guide-content-frame {
     display: flex;
     flex-direction: column;
+    gap: 25px;
+
+    align-self: center;
 
     padding: 25px;
+
+    width: 75%;
+}
+
+.guide-content-frame img {
+    align-self: center;
+
+    border-radius: 5px;
+
+    width: 75%;
+}
+
+.guide-content-frame h2 {
+    font-size: 14pt;
+}
+
+#table-of-contents-frame {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#table-of-contents {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin: 0px;
+}
+
+#table-of-contents a,
+#table-of-contents a:visited {
+    color: var(--dark-font-color);
+}
+
+#lineage-tab-img-frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#lineage-tab-img-frame img {
+    width: 300px;
 }
